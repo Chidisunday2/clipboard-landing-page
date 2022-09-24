@@ -1,0 +1,222 @@
+*{
+    padding: 0;
+    margin:  0;
+
+}
+html{
+    font-size: 10px;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+h1{
+    font-size: 3.5rem;
+    color: #444
+}
+h2{
+    font-size: 3rem;
+    color: #444
+}
+p{
+    font-size: 1.8rem;
+    color: grey;
+}
+header{
+    height: 25rem;
+    background-image: url("../images/bg-header-desktop.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .logo{
+    width: 8rem;
+    display: block;
+    margin: auto;
+}
+main{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+.section1{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+section{
+    height: auto;
+}
+.section h2{
+    padding-top: 3rem;
+}
+section button{
+    padding:1rem;
+    color: #fff;
+    border: none;
+    border-radius: 1.8rem;
+    margin: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+section .btn1{
+    background-color:  hsl(171, 66%, 44%);
+}
+section .btn2{
+    background-color: hsl(233, 100%, 69%);
+}
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.heading{
+    width: 70%;
+    text-align: center;
+    margin: 5rem auto;
+    
+}
+
+.features{
+    display:flex;
+    justify-content: center;
+    width: 100vw;
+}
+
+.features .photo{
+    flex: 1;
+}
+.features .feature-details{
+    flex: 1;
+    margin-left: 3rem;
+    padding: 2.5rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly
+}
+.desktop{
+    width: 100%;
+}
+.feature-details h3{
+    font-size: 2rem;
+    color: #444;
+}
+.feature-details p{
+    font-size: 1.3rem;
+    margin-bottom: 2rem;
+}
+
+.devices{
+    display: block;
+    width: 60%;
+    margin: auto;
+}
+.workflow{
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 2rem;
+
+}
+.workflow article{
+    width:30rem;
+    padding: 2rem;
+    text-align: center;
+}
+.workflow article>*{
+    margin-bottom: 2rem;
+}
+.brands{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 3rem;
+}
+.brands img{
+  width: 9rem;
+  height: 3rem;
+}
+.btns{
+    text-align: center;
+}
+footer{
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-around;
+   margin-top: 4rem;
+   align-items: center;
+   padding: 1rem 0;
+}
+
+footer .footer-icon{
+    width: 5rem;
+}
+
+footer .infos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 2rem;
+    
+}
+
+.infos p{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.social a{
+    margin-left: 1rem;
+    font-size: 2.5rem;
+    color: gray;
+}
+.social a:hover, .infos p:hover{
+    color: hsl(171, 66%, 44%);
+}
+
+@media (max-width:700px){
+
+    main{
+        width: 100%;
+    }
+
+    header{
+        background-image: url("../images/bg-header-mobile.png");
+    }
+    header .logo{
+        width: 13rem;
+    }
+    .infos p, .brands img{
+        display: block;
+        margin-bottom: 2rem;
+       
+    }
+    
+    section, footer, .social, footer .infos, .brands, .btns,.workflow, .features{
+        display: block;
+        display: flex;
+        
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        align-content: space-between;
+        }
+     .brands img{
+        display: block;
+     }
+     .btn1, .btn2{
+        width: 35rem;
+        padding: 1.8rem;
+        border-radius: 2.5rem;
+     }
+
+     footer *{
+        margin-bottom: 2rem;
+     }
+     footer .social{
+        flex-direction: row;
+     }
+
+}
